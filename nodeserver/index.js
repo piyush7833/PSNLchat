@@ -5,7 +5,7 @@ const io = require('socket.io')(8000, {
       origin: '*',
     }
   });
-
+const port = process.env.PORT || 8000;
 const users = {};
 
 // here all events are not pre defined it is randomly or as per use defined by me
